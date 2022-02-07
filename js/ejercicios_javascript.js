@@ -1,4 +1,9 @@
 //ej 1
 console.log("hola mundo");
-// ej 2
-var nombre = ""
+// ej 
+
+
+var nombre = "(sr.)jhoan Sebastian"
+if(nombre){
+    console.log("bienvenido"+nombre)
+};
