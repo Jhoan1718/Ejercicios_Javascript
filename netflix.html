@@ -5,20 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>netflix</title>
-    <script src="js/netflix.js"></script>
     <link rel="stylesheet" href="css/netflix.css">
+    <script src="js/netflix.js"></script>
 </head>
 <body>
-  <h3>leyendo en el DOM el contenido input text</h3>
-  <input type="text" id="nombre" placeholder="Ingrese su nombre..."><br>>
-  <h3>leyendo en el DOM el contenido del parrafo </h3>
-  <p id="parr">texto sera leido desde javascript</p>
-  <input type="button" onclick="verInfo();" value="Enviar">
-
-
-
-  <img id="yo"src="img/yo.png" onclick="hacer_invisible();">
-  <img id="yo"src="img/yo.png" onclick="hacer_invisible();">
-  <img id="yo"src="img/yo.png" onclick="hacer_invisible();">
-</body>
+    <div> <img  id="pantalla" class="principal-movie"src="img/it-comes.jpg" alt="pantalla">
+    </div>
+    <div>
+    <img id="zam1" src="img/la casa de.jpeg" onmouseover="interConArg('pantalla', 'img/el.jpg');">
+    <img id="zam2" src="img/peaky.jpg"onmouseover="interConArg('pantalla', 'img/la.jpg');">
+    <img id="zam3" src="img/riverla.jpg"onmouseover="interConArg('pantalla', 'img/los.jpg');">
+    </div>
+</body>img//riverlade.jpg
 </html>
