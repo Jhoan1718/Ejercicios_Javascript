@@ -7,6 +7,7 @@ function aumentar(){
          document.getElementById("total").innerHTML = cantidad;
             
         }
+        calcularTotal();
     }
 function disminuir(){
      if( inicio >= 1) {
@@ -15,7 +16,7 @@ function disminuir(){
     }
 
 function calcularTotal() {
-    let valorUnidad = document.getElementById("valorUnitario").innerHTML;
+    let valorUnidad = document.getElementById("unitario").innerHTML;
     let cantidadElementos = document.getElementById("total").innerHTML;
     let valorCompra = valorUnidad * cantidadElementos;
     document.getElementById("multiplicar").innerHTML = valorCompra;

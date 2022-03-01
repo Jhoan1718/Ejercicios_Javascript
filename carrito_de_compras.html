@@ -5,35 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Ejercicios_Javascript/icons/all.css">
+    <link rel="stylesheet" href="icons/all.css">
     <link rel="stylesheet" href="css/carrito_de_compras.css">
     <script src="js/carrito_de_compras.js"></script>
 </head>
 <body>
     <div class="container">
-        <label class="resaltar">Subtotal cop <span id="multiplicar" class="punto">0</span></label>
-      <div class="box-1">
-        <label class="resaltar" >Proceder al pago de ( <span id="total" class="punto">0</span> productos)</label>
+        <label class="resaltar">Subtotal cop <span id="multiplicar"class="punto"></span></label>
+        <div class="box-1">
+        <label class="resaltar" >Proceder al pago de ( <span id="total"class="punto">0</span> productos)</label>
     </div>
-    <div>
-        
+           <div class ="imagen">
+           <img src="img/la casa de.jpeg" alt="">  
     </div>
-    
-     </div>
-        
-           
+     <div class="texto"><p class="texto"> Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y Timbre. Cinco meses de preparación quedarán reducidos a once días para poder llevar
+        a cabo con éxito el gran golpe. <br><br><br>
+        <label id="unitario">30000</label></p></div>
 
-   <div>
-     <label id="valorUnitario">15000</label></p>
-    </div>
-       <div class="img">
-            <img src="img/la casa de.jpeg" alt="">
-        </div>
-       <div >
-        <button id="aumentar" onclick="aumentar();">+</button>
-        <input type="button" id="numUnidades" value="0">
+   <div class="boton">
         <button id="disminuir" onclick="disminuir();">- </button>
+        <input type="text" id="numUnidades" value="0">
+        <button id="aumentar" onclick="aumentar();">+</button>
     </div>
+  </div>
 
+  
 </body>
 </html>
