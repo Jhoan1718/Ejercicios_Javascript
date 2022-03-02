@@ -4,24 +4,29 @@ let numUnidades = "";
 function aumentar(){
      if( inicio <= 9) {
          numUnidades = document.getElementById('numUnidades').value = ++inicio;
-         document.getElementById("total").innerHTML = cantidad;
+         /* document.getElementById("total").innerHTML = cantidad; */
             
         }
-        calcularTotal();
+        calcularSubtotal();
     }
 function disminuir(){
      if( inicio >= 1) {
           numUnidades = document.getElementById('numUnidades').value = --inicio;
+          
         }
+        calcularSubtotal();
     }
 
-function calcularTotal() {
-    let valorUnidad = document.getElementById("unitario").innerHTML;
+function calcularSubtotal() {
+    let valorUnidad = document.getElementById("numUnidades").innerHTML;
+   
+
     let cantidadElementos = document.getElementById("total").innerHTML;
     let valorCompra = valorUnidad * cantidadElementos;
     document.getElementById("multiplicar").innerHTML = valorCompra;
     
 }
+
 
 
 
