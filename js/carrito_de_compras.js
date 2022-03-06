@@ -15,12 +15,12 @@ function disminuir(){
           
         }
         calcularSubtotal();
+       
     }
 
-function calcularSubtotal() {
+function calcularSubtotal() {   
     let valorUnidad = document.getElementById("numUnidades").innerHTML;
-   
-
+    alert(total)
     let cantidadElementos = document.getElementById("total").innerHTML;
     let valorCompra = valorUnidad * cantidadElementos;
     document.getElementById("multiplicar").innerHTML = valorCompra;
