@@ -1,5 +1,7 @@
+let nodoTabla = undefined;
+
 function CrearEncabezado(){
-    let nodoTabla = document.createElement("table");
+    nodoTabla = document.createElement("table");
     let contenedor = document.getElementById("tabla-js");
     contenedor.appendChild(nodoTabla);
  
@@ -44,6 +46,9 @@ function CrearEncabezado(){
    }
 }
 function cargarProducto() {
+    if (validarFormulario()){
+
+    
     validarTabla();
 
     let inputCodigo = document.getElementById("codigo").value;
@@ -53,7 +58,39 @@ function cargarProducto() {
     let inputDescripcionNodo = document.createTextNode(inputDescripcion);
 
     cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo);
+   }
 }
-function cargarInfoTabla(codigo,caracteristicas)
+function cargarInfoTabla(codigo, descripcion) {
+    let nodoProducto = document.createElement("tr");
+    nodoTabla.appendChild(nodoProducto)
 
+    let nodoCodigoTD = document.createElement("td");
+    nodoProducto.appendChild(nodoCodigoTD);
+    nodoCodigoTD.appendChild(codigo);
 
+    let nodoDescTD = document.createElement("td");
+    nodoProducto.appendChild(nodoDescTD);
+    nodoDescTD.appendChild(descripcion);
+    
+}
+
+function validarFormulario(){
+    let inputCodigo = document.getElementById("codigo").value.trim();
+    if(inputCodigo ==""){
+    alert("porfavor ingrese el codigo del producto")
+    return false;
+
+   }
+  return true;  
+}  
+/* function registrarProducto(){
+    let txtCodigo = document.getElementById("codigo").value.trim();
+    let nodoFilaProducto = document.createElement("tr");
+    nodoTabla.appendChild(nodoFilaProducto);
+    let nodoTDcodigo = document.createElement("td");
+    nodoFilaProducto.appendChild(nodoTDcodigo);
+    let nodoCodigo = document.createTextNode(txtCodigo);
+    nodoTDcodigo.appendChild(nodoCodigo);
+    
+}
+ */
