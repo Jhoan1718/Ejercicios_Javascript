@@ -81,7 +81,7 @@ function validarFormulario(){
     return false;
 
    }
-  return true;  
+  return true; 
 }  
 /* function registrarProducto(){
     let txtCodigo = document.getElementById("codigo").value.trim();
