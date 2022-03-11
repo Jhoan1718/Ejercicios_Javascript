@@ -21,12 +21,12 @@ function CrearEncabezado(){
 
     let nodoEncabezado3 = document.createElement("th")
     nodoFilaEncabezado.appendChild(nodoEncabezado3);
-    let valorHeading = document.createTextNode("valor Unitario");
+    let valorHeading = document.createTextNode("valor");
     nodoEncabezado3.appendChild(valorHeading);
 
     let nodoEncabezado4 = document.createElement("th")
     nodoFilaEncabezado.appendChild(nodoEncabezado4);
-    let unidadHeading = document.createTextNode("Unidades en stock");
+    let unidadHeading = document.createTextNode("UnidadesStock");
     nodoEncabezado4.appendChild(unidadHeading);
 
  
@@ -57,10 +57,17 @@ function cargarProducto() {
     let inputDescripcion = document.getElementById("caracteristicas").value;
     let inputDescripcionNodo = document.createTextNode(inputDescripcion);
 
-    cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo);
+    let inputValor = document.getElementById("valor").value;
+    let inputValorNodo = document.createTextNode(inputValor);
+
+    let inputUnidad = document.getElementById("UnidadesStock").value;
+    let inputUnidadNodo = document.createTextNode(inputUnidad);
+
+    cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo, inputValorNodo, inputUnidadNodo );
+
    }
 }
-function cargarInfoTabla(codigo, descripcion) {
+function cargarInfoTabla(codigo, descripcion, valor, unidad) {
     let nodoProducto = document.createElement("tr");
     nodoTabla.appendChild(nodoProducto)
 
@@ -71,18 +78,36 @@ function cargarInfoTabla(codigo, descripcion) {
     let nodoDescTD = document.createElement("td");
     nodoProducto.appendChild(nodoDescTD);
     nodoDescTD.appendChild(descripcion);
-    
+
+    let nodoValTD = document.createElement("td");
+    nodoProducto.appendChild(nodoValTD);
+    nodoValTD.appendChild(valor);
+
+    let nodoUnidadTD = document.createElement("td");
+    nodoProducto.appendChild(nodoUnidadTD);
+    nodoUnidadTD.appendChild(unidad);
+
+
 }
+
 
 function validarFormulario(){
     let inputCodigo = document.getElementById("codigo").value.trim();
     if(inputCodigo ==""){
-    alert("porfavor ingrese el codigo del producto")
+    alert("porfavor ingrese el codigo del producto");
+
+    /* let inputDescripcion = document.getElementById("caracteristicas").value.trim();
+    if(inputDescripcion ==""){
+    alert("porfavor ingrese la descripcion del producto") 
+} */
     return false;
 
-   }
+   
+}
   return true; 
-}  
+ 
+
+}
 /* function registrarProducto(){
     let txtCodigo = document.getElementById("codigo").value.trim();
     let nodoFilaProducto = document.createElement("tr");
