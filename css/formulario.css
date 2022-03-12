@@ -1,19 +1,61 @@
 fieldset {
-    width: 70%;
-    margin: 80px;
-    padding: 40px;
-    border: solid 1px black;
+    width: 60%;
+    margin: auto;
     display: block;
     border-radius: 20px;
+}
+h2{
     text-align: center;
 }
-
-.cuadro1{
-    padding: 15px;
-    margin: 20px;
-
+.codigoProducto{
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 75%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.caracteristicasproducto {
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 75%;
+    border-radius: 10px;
+    border: 1px solid black;
 
 }
+
+.valorPro{
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 10px;
+    width: 30px;
+    
+}
+.valorProducto {
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid black;
+ 
+}
+.unidadPro{
+    padding: 5px;
+    margin-left: 60px;
+    width: 80px;
+    
+}
+.unidadesProducto {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left:50px;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+
+
 .table-style{
     display: block;
     margin: 30px auto;
@@ -24,8 +66,17 @@ fieldset {
   
    
 }
-td, th {
+/* td, th {
     border: 1px solid rgb(78, 71, 71);
     padding: 20px;
+} */
+#codigo {
+   
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+   
+
+
 }
 

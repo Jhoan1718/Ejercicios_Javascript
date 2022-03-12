@@ -10,24 +10,26 @@
 </head>
 <body>
     <form action="">
-<fIeldset>
-    <div> 
-    <div class="crear-formulario">
-       <h2>registro de productos</h2> 
-           <label>Codigo </label><input id="codigo" type="text" name="codigoProducto"><br> 
-            <label>caracteristicas </label> <input id="caracteristicas" type="text" name="caracteristica producto"><br>
+        <fIeldset>
+            <div> 
+                <div class="crear-formulario">
+                    <h2>registro de productos</h2> 
+                    <label class="valorPro">Codigo </label><input id="codigo" type="text" class="codigoProducto"><br> 
 
-            <label>valor unitario </label> <input id="valor" type="text" name="valorProducto"><br>
+                    <label class="valorPro">Decripcion</label><input id="caracteristicas" type="text" class="caracteristicasproducto"><br>
 
-            <label>Unidades en stock </label> <input id="UnidadesStock" type="text" name="Unidades producto"><br>
+                    <label class="valorPro">valor unitario </label> <input id="valor" type="text" class="valorProducto">
 
-             <input type="button" value="Codigo" onclick="cargarProducto()">
-              <div id="tabla-js"></div> 
+                    <label class="unidadPro">Unidades en stock </label> <input class="unidadesProducto" type="text"  id="UnidadesStock"><br>
 
+                    <input type="button" value="Codigo" onclick="cargarProducto()">
+
+                    <div id="tabla-js"></div> 
+
+                </div>
             </div>
-          </div>
- </fIeldset>
-</form>
-<script src="js/formulario.js"></script>
+        </fIeldset>
+    </form>
+    <script src="js/formulario.js"></script>
 </body>
 </html>
