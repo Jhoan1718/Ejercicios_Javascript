@@ -96,17 +96,28 @@ function validarFormulario(){
     if(inputCodigo ==""){
     alert("porfavor ingrese el codigo del producto");
 
-    /* let inputDescripcion = document.getElementById("caracteristicas").value.trim();
+    return false;
+} 
+let inputDescripcion = document.getElementById("caracteristicas").value.trim();
     if(inputDescripcion ==""){
     alert("porfavor ingrese la descripcion del producto") 
-} */
-    return false;
 
-   
+ return false;
 }
-  return true; 
- 
+let inputValor = document.getElementById("valor").value.trim();
+if(inputValor ==""){
+alert("porfavor ingrese el valor del producto") 
 
+return false;
+}
+
+let inputUnidad = document.getElementById("UnidadesStock").value.trim();
+if(inputUnidad ==""){
+alert("porfavor ingrese las unidades del producto") 
+
+return false;
+} 
+  return true; 
 }
 /* function registrarProducto(){
     let txtCodigo = document.getElementById("codigo").value.trim();

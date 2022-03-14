@@ -28,6 +28,7 @@ h2{
     padding: 20px;
     margin-left: 10px;
     width: 30px;
+
     
 }
 .valorProducto {
@@ -36,13 +37,13 @@ h2{
     width: 20%;
     border-radius: 10px;
     border: 1px solid black;
- 
+  
 }
 .unidadPro{
     padding: 5px;
     margin-left: 60px;
     width: 80px;
-    
+ 
 }
 .unidadesProducto {
     padding: 10px;
@@ -51,6 +52,7 @@ h2{
     width: 30%;
     border-radius: 10px;
     border: 1px solid black;
+
 }
 
 
@@ -62,21 +64,35 @@ h2{
     width: 70%;
     padding: 18px;
     border-collapse: collapse;
-   
-  
-   
+    color: rgb(0, 0, 0);
+    
 }
-/* td, th {
+ td, th {
     border: 1px solid rgb(78, 71, 71);
     padding: 20px;
-} */
+    
+} 
+th {
+    background-color: rgb(83, 83, 83);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+}   
+td{
+    border: 1px solid rgb(0, 0, 0);
+    padding-bottom: 3px;
+    text-align:left;
+}
+
 #codigo {
    
     padding: 10px;
     border-radius: 10px;
     margin-left: 20px;
-   
-
-
 }
-
+#boton {
+    width: 80%;
+    margin-left: 100px;
+    padding: 15px;
+    background-color: rgb(18, 152, 206);
+    color: white;
+}
