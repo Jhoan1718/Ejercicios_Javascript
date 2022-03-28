@@ -1,3 +1,5 @@
+
+
 /* let inicio = 0;
 let numUnidades = "";
     
@@ -29,33 +31,44 @@ function calcularSubtotal() {
     
 }
  */
+"user strict"
 
-
-let inicio = 0;
+let inicio = 0
 let cantidad = "";
+let cantidadProducto
+let totalProductos = 30000;
+let cantidadYaProducto
+
+function aumentarUnidades() {
 
 
-function aumentar(){
-    if( inicio <= 9) {
-        cantidad = document.getElementById('cantidad').value = ++inicio;
-        document.getElementById("total").innerHTML = cantidad;
+    if(inicio <=9){
+        cantidad = document.getElementById("cantidad").value = ++inicio;
+        // document.getElementById("total").innerHTML = cantidad;
+
+        cantidadProducto = document.getElementById("igual");
+        cantidadProducto.innerHTML = inicio;
+
+        cantidadYaProducto = document.getElementById("multiplicar");
+        cantidadYaProducto.innerHTML = inicio * totalProductos ;
+
+     
+
     }
-    calcularTotal();
 }
- 
-function disminuir() {
-    if(inicio >= 1) {
-        cantidad = document.getElementById('cantidad').value = --inicio;
+function disminuirUnidades() {
+    if(inicio >=1){
+        cantidad = document.getElementById("cantidad").value = --inicio;
+        // document.getElementById("total").innerHTML = cantidad
+
+        cantidadProducto = document.getElementById("igual");
+        cantidadProducto.innerHTML = inicio;
+
+        cantidadYaProducto = document.getElementById  ("multiplicar");
+        cantidadYaProducto.innerHTML = inicio * totalProductos ;
+      
     }
 }
- function calcularTotal() {
-    let valorUnidad = document.getElementById("valorUnitario").innerHTML;
-    let cantidadElementos = document.getElementById("total").innerHTML;
-    let valorCompra = valorUnidad * cantidadElementos;
-    document.getElementById("multiplicar").innerHTML = valorCompra;
-
-}
-
 
 
 

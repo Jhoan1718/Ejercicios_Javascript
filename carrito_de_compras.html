@@ -86,29 +86,33 @@
     	<!--    <input  onclick="mostrarNuevoNombre();" type="button" value="Mostrar Nuevo Nombre">
 	    <input  onclick="mostrarNombreAntiguo();" type="button" value="Mostrar Nombre Antiguo">
 	    <label id="mostrarNombre" ></label> <br><br>  --> 
+       
 	    <div class="container">
-        
+            <h2> subtotal Cop<label class="subTotal" id="multiplicar">30000</label ></h2>
+                <div class="box1">
 
-            
-	        <label class="resaltar">Subtotal cop <span id="multiplicar" class="punto">0</span></label>
-	          <div class="box1">
-              <div class="texto"><p class="texto"> Cartero es una novela escrita por Charles Bukowski. Se la considera 
-                novela autobiográfica sobre una etapa de su vida. Post Office es la primera novela escrita por Bukowski<br><br>
-            Cop  <label id="valorUnitario">30000</label></p></div> 
-           
+                    <div class="text">
+                        <p class="texto"> Libro de charles bukowsky <br><br> Cartero es una novela<br>escrita por Charles Bukowski. <br> Se la considera 
+                        novela autobiográfica <br> sobre una etapa de su vida.<br><br> Sebastian Lopez <br><br>
+                        Cop  <label id="valorUnitario">30000</label></p></div> 
 
-	        <label class="resaltar">Proceder al pago ( <span id="total" class="punto">0</span> productos)</label>
-	         </div>
-	         <div class="imagen">
+                    <div>
+
+                        <label class="pago">Proceder al pago ( <span class="num" id="igual" >0</span> productos)</label>
+	            </div>
+            </div>
+
+	         <div class="img">
 	           <img src="img/charles.jpg" alt="">
 	        </div>
 	        
 	       
 	    <div class="boton">
-            <button id="disminuir" onclick="disminuir();">- </button>
-	        <input type="text" id="cantidad" value="0">
-	        <button id="aumentar" onclick="aumentar();">+</button>
+            <a href="#" class="sumRest" id="disminuir" onclick="disminuirUnidades();">-</a>
+            <input class="valor" type="button"  id="cantidad" value="0"  >
+             <a href="#" class="sumRest" id="aumentar" onclick="aumentarUnidades();">+</a>
 	    </div>
+
 	    </div>
 
 </body>

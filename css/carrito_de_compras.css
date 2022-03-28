@@ -1,11 +1,12 @@
 .container {
-    width: 20%;
-    margin: 80px;
+    width: 25%;
+    margin: 70px;
     padding: 40px;
-    border: solid 1px black;
+    border: solid 1px #000000;
     border-radius: 20px;
+    margin-left: 25px;
   }
-   /* .boton {
+    .boton {
     margin-top: 70px;
   }
   #aumentar, #disminuir{
@@ -29,9 +30,23 @@
    background-color: yellow; 
     padding-top: 3px;
   }
-  .texto{
-      position:absolute;
+  .text{
+    /*   position:absolute;
       margin-top: 10px; 
       margin-left: 110px;
+      font-size: 18; */
+      position: absolute;
+      margin-left: 230px;
+      margin-top: 40px;
       
+  }
+  .pago{
+    font-size: 18px;
+  }
+  .texto {
+    font-size: 18px;
+  }
+  .img{
+    margin-top: 27px;
+    margin-left: 1px;
   }
