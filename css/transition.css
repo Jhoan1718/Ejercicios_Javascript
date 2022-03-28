@@ -1,0 +1,43 @@
+.container-1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 1500ms;
+    margin-bottom: 30px;
+}
+.container-1:hover{
+    width: 300px;
+}
+.container-2{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    transition: background-color 2000ms;
+    margin-bottom: 30px;
+}
+.container-2:hover{
+    background-color:darkcyan;
+}
+.container-3{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    transition-property: width;
+    transition:width 1500ms, background-color  1500ms;
+    margin-bottom: 30px;
+}
+.container-3:hover{
+    width: 300px;
+    background-color: darkcyan;
+}
+.container-4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(251, 255, 0);
+    clip-path: circle(50% at center);
+    margin-bottom: 30px;
+}
+
+
+
