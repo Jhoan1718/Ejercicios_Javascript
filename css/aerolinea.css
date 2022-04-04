@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #2A0087; 
+}
+.h1 {
+    grid-area: left;
+    padding: 20px;
+
+}
+
+.menu {
+    display: block;
+    padding: 20px;
+    color: rgb(255, 253, 253);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
