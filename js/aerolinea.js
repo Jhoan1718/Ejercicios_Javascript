@@ -8,13 +8,13 @@ class vuelos {
     }
 }
 let vuelo=[{
-    "origen": "BGT",
-    "destino" : "CTG",
+    "origen": "bogota",
+    "destino" : "Cartagena",
     "precio": 25000,
 },
 {
-  "origen": "BGT",
-  "destino" : "CTG",
+  "origen": "bogota",
+  "destino" : "Cartagena",
   "precio": 48000,
 }];
 function MostrarVuelos(){
@@ -27,22 +27,25 @@ function cargarVuelos(origen, destino, precio){
     let contentVuelo = document.createElement("div");
     let contentPrincipal = document.getElementById("main-content")
     contentPrincipal.appendChild(contentVuelo);
-    contentPrincipal.setAttribute
+    contentPrincipal.setAttribute("class", "style-contentVuelo")
 
 
     let origenVuelo = document.createElement ("label")
     contentVuelo.appendChild(origenVuelo);
     let textorigen =  document.createTextNode(origen);
     origenVuelo.appendChild(textorigen);
+    origenVuelo.setAttribute("class", "style-origen")
 
     let destinoVuelo = document.createElement ("label")
     contentVuelo.appendChild(destinoVuelo);
     let textdestino =  document.createTextNode(destino);
     destinoVuelo.appendChild(textdestino);
+    destinoVuelo.setAttribute("class", "style-destino")
   
     let precioVuelo = document.createElement ("label")
     contentVuelo.appendChild(precioVuelo);
     let textprecio =  document.createTextNode(precio);
     precioVuelo.appendChild(textprecio);
+    precioVuelo.setAttribute("class", "style-precio")
 
 }

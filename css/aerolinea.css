@@ -2,24 +2,102 @@
     margin: 0;
     padding: 0;
 }
-.main-content {
+.contenedor {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template: "avion nombre  campana bar"/
+                     2fr   200px  200px   90px;    
     background-color: #2A0087; 
-}
-.h1 {
-    grid-area: left;
-    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    
 
 }
+
 
 .menu {
-    display: block;
-    padding: 20px;
+    display: grid;
+    
     color: rgb(255, 253, 253);
     font-size: 30px;
     font-weight: bold;
+    background-color: #2A0087; 
+    text-decoration: none;
+    
 } 
+.h2 {
+    display: grid;
+    grid: h2;
+    color: white;
+    font-size: 30px;
+    margin: 3px;
+    text-decoration: none;
+    padding: 10px;
+}
+.viajes{
+    grid: h2;
+    color: white;
+    font-size: 30px;
+    margin: 3px;
+    text-decoration: none;
+    padding: 10px;
+}
+.style-contentVuelo{
+    font-size: 20px;
+}
+.fa.bars{
+    grid-area: bars;
+    margin: 3px;
+    padding: 10px;
+}
+.fa-bell{
+    grid-area: campana;
+    margin: 3px;
+    padding: 10px;
+}
+/*  .fab{
+    grid-area: avion;
+    border: 1px solid  black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-left: 70px;
+    font-size: 25px;
+    
+}  */
+.h1{
+    display: grid;
+    color: white;
+    font-size: 30px;
+    margin: 3px;
+    text-decoration: none;
+}
+.style-contentVuelo{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+   
+                     
+} 
+
+
+.style-origen{
+    grid-area:style-origen ;
+    display: grid;
+    font-size: 1.5em;
+}
+
+.style-destino{
+    grid-area: style-destino ;
+    font-size: 1.5em;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+}
+.style-precio{
+    grid-area: style-precio;
+    font-size: 1.5em;
+    display:grid;
+}
+
 
 
 
