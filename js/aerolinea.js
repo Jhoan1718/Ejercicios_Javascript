@@ -11,7 +11,7 @@ class vuelos {
     }
 }
 let vuelo=[{
-    "origen": "bogota",
+    "origen": "Bogotá",
     "destino" : "Cartagena",
     "precio": "COP "+25000,
     "horaInicio" : "08:20 am",
@@ -19,7 +19,7 @@ let vuelo=[{
     "directo" : "Vuelo Directo",
 },
 {
-  "origen": "bogota",
+  "origen": "Bogotá",
   "destino" : "Cartagena",
   "precio": "COP " + 48000,
   "horaInicio" : "09:25 am",

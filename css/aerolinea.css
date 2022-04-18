@@ -64,6 +64,11 @@
 font-family: 'Times New Roman', Times, serif;                             
                                                                
 } 
+.style-contentVuelo:hover{
+    box-shadow: 4px 4px 4px rgb(179, 177, 177);
+    transition-duration: 350ms;
+  
+}
 .fa.bars{
     grid-area: bars;
     margin: 3px;
@@ -85,27 +90,70 @@ font-family: 'Times New Roman', Times, serif;
 .style-directo{
     font-size: 15px;
    color: gray;
+   cursor: pointer;
 }
 /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 .style-horaInicio{
     color: #2A0087;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    cursor: pointer;
 
 }
 .style-horaFinal{
     color: #2A0087;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    cursor: pointer;
 
 }
 .style-precio{
     color: #2A0087;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.fa{
+    grid-area: bars;
+    margin: 3px;
+    padding: 10px;
+  
     
 }
-
+.textopresentacion{
+    
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid gray;
+   
+}
+.presentacion{
+    padding: 15px;
+    display: inline-block;
+   
+}
+.fa-solid{
+    
+    padding: 10px;
+}
+.titulo{
   
+    padding: 15px;
+}
+.boton{
+    border: 1px solid #EE1750;
+    border-radius: 10px;
+    background-color: #EE1750;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.boton:hover{
+    transition-duration: 200ms;
+    transform: translate(3px);
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
 
  
 
