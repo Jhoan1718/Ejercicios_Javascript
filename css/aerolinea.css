@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
 }
@@ -42,9 +42,28 @@
     text-decoration: none;
     padding: 10px;
 }
-.style-contentVuelo{
+ .style-contentVuelo{
     font-size: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: grid;
+
+    grid-template: "style-origen style-directo  style-destino " 
+                     "empty    style-directo style-destin  " /
+                              1fr           1fr      150px ;
+   
 }
+.style-contentVuelo{
+    
+  padding: 20px;
+  width: 80%;
+  margin-left: 8%;                           
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+font-family: 'Times New Roman', Times, serif;                             
+                                                               
+} 
 .fa.bars{
     grid-area: bars;
     margin: 3px;
@@ -55,15 +74,7 @@
     margin: 3px;
     padding: 10px;
 }
-/*  .fab{
-    grid-area: avion;
-    border: 1px solid  black;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    margin-left: 70px;
-    font-size: 25px;
-    
-}  */
+
 .h1{
     display: grid;
     color: white;
@@ -71,32 +82,32 @@
     margin: 3px;
     text-decoration: none;
 }
-.style-contentVuelo{
-    display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
-   
-                     
-} 
-
-
-.style-origen{
-    grid-area:style-origen ;
-    display: grid;
-    font-size: 1.5em;
+.style-directo{
+    font-size: 15px;
+   color: gray;
 }
+/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+.style-horaInicio{
+    color: #2A0087;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 
-.style-destino{
-    grid-area: style-destino ;
-    font-size: 1.5em;
-    text-align: right;
-    display: flex;
-    justify-content: center;
+}
+.style-horaFinal{
+    color: #2A0087;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
 }
 .style-precio{
-    grid-area: style-precio;
-    font-size: 1.5em;
-    display:grid;
+    color: #2A0087;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
+
+  
+
+ 
 
 
 
